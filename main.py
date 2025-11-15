@@ -12,7 +12,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-GEMINI_API_KEY = "AIzaSyAwRIm4-0Mnpe3kAGluWisZrKTT4aX54mY"
+GEMINI_API_KEY = os.getenv("AIzaSyAwRIm4-0Mnpe3kAGluWisZrKTT4aX54mY")
 MODEL = "gemini-1.5-flash"
 
 @app.get("/models")
